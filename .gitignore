@@ -1,3 +1,5 @@
 _pychache_/*
 .Rhistory
 .vscode/*
+.vscode/launch.json
+__pycache__/funcs.cpython-38.pyc

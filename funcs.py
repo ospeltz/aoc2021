@@ -11,3 +11,7 @@ def print_arr(ar):
     for a in ar:
         print(a)
 
+def print_map(ma):
+    for k in ma:
+        print(k, ":", ma[k])
+
