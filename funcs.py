@@ -1,10 +1,14 @@
-def read_file(nm, no_newline=True):
+from os import remove
+
+
+def read_file(nm, no_newline=True, remove_blanks=False):
     res = []
     with open("data/" + nm) as f:
         for line in f:
             if no_newline:
                 line = line.replace('\n','')
-            res.append(line)
+            if not remove_blanks or (line != "" and line != "\n"): 
+                res.append(line)
     return res
 
 def print_arr(ar):
